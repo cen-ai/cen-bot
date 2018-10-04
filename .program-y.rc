@@ -1,0 +1,8 @@
+#!
+
+export EXEDIR=$(dirname $0)
+export PYROOT=$EXEDIR/../program-y
+export PYTHONPATH=$PYROOT/src:.
+
+[ -e ~/.program-y.rc ] && source ~/.program-y.rc
+
