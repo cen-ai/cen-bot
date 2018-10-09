@@ -1,9 +1,9 @@
 #! /bin/sh
 
 cd $(dirname $0)
-pwd
+
 #clear
-export PYTHONPATH=./program-y/src:
+export PYTHONPATH=../../program-y/src:
 if [[ -z "${PYTHONPATH}" ]]; then
   echo "PYTHONPATH is undefined"
   exit
