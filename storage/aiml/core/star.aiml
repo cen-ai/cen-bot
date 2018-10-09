@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml>
+    <!-- Free software (c) 2001 ALICE A.I. Foundation.   -->
+    <!-- This program is open source code released under -->
+    <!-- the terms of the GNU General Public License     -->
+    <!-- as published by the Free Software Foundation.   -->
+    <!-- Complies with AIML 1.0 Tag Set Specification -->
+    <!-- as adopted by the ALICE A.I. Foundation.  -->
+    <!-- A.L.I.C.E. Build Wed Sep 26 13:05:06 PDT 2001   -->
+    <!-- 41124 total categories.  -->
+    <category>
+        <pattern>HOW BIG IS YOUR TEAM</pattern>
+        <template>We are a team of 6 including me backed by a large open source community and a 400 person Human Intelligences team.</template>
+    </category>
+    <category>
+        <pattern>RELOAD</pattern>
+        <template>
+          <extension path="programy.extensions.admin.hotreload.HotReloadAdminExtension">
+              RELOAD ALL AIML
+          </extension>
+          </template>
+    </category>
+
+    <category>
+        <pattern>LISTUP</pattern>
+        <template>
+          <extension path="programy.extensions.admin.scheduler.SchedulerAdminExtension">
+              COMMANDS
+          </extension>
+          </template>
+    </category>
+</aiml>
