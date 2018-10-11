@@ -1,12 +1,12 @@
-#!/usr/bin/env bash 
+#!/usr/bin/env bash
 
 set -x
 
 cd $(dirname $0)
 
-DBAUTH=programy:password123@localhost
+DBAUTH=root@localhost
 
-export PYTHONPATH=../../../program-y/src
+export PYTHONPATH=../../program-y/src
 
 # Categories
 python3 -m programy.storage.stores.sql.loader -c --entity categories --url mysql+pymysql://$DBAUTH/programy --dir ../../storage/aiml --subdir --extension=.aiml --verbose
@@ -37,5 +37,4 @@ done
 python3 -m programy.storage.stores.sql.loader -c --entity licenses --url mysql+pymysql://$DBAUTH/programy --file ../../storage/conf/license.keys --verbose
 
 # UserGroups
-## python3 -m programy.storage.stores.sql.loader -c --entity usergroups --url mysql+pymysql://$DBAUTH/programy --file ../../storage/conf/usergroups.yaml --verbose
-
+# python3 -m programy.storage.stores.sql.loader -c --entity usergroups --url mysql+pymysql://$DBAUTH/programy --file ../../storage/conf/usergroups.yaml --verbose
