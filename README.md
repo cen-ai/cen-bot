@@ -36,10 +36,15 @@ you can run the cen-bot on your own machine.
 
 ## Database Creation 
 < TDB >
-
+```
+$ mysqlcreate programy -u root
+```
 
 ## Database Loading
 < TDB >
+```
+$ ./scripts/xnix/sqlloader.sh
+```
 
 ## Run Time. 
  Command Line
