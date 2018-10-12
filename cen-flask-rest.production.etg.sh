@@ -7,8 +7,5 @@ pwd
 #clear
 
 #touch /tmp/cen.log
-python3 $PYROOT/src/programy/clients/restful/flask/client.py --config $EXEDIR/config.yaml --cformat yaml --logging $EXEDIR/logging.yaml 
+python3 $PYROOT/src/programy/clients/restful/flask/client.py --config $EXEDIR/config.yaml --cformat yaml --logging $EXEDIR/logging.yaml
 #tail -f /tmp/cen.log
-
-
-
