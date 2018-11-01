@@ -6,6 +6,7 @@
 <!-- Last modified 3/3/2018 -->
 <!-- How do I use cen? -->
 
+
 <category><pattern># WEATHER IN * NOW</pattern>
 <template><sraix service="weather"><star index="2"/></sraix></template>
 </category>
@@ -211,7 +212,7 @@
             </srai>
         </template>
     </category>
-    
+
 
 
 

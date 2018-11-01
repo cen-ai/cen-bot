@@ -201,6 +201,8 @@ brain:
       save_binary: false
       load_binary: false
       load_aiml_on_binary_fail: false
+      binary_filename: /tmp/y-bot.brain
+      dump_to_file: /tmp/braintree.txt
 
     debugfiles:
       save-errors: true
@@ -208,7 +210,9 @@ brain:
 
     # Braintree
     braintree:
-      create: False
+      create: true
+      file: /tmp/braintree.xml
+      format: xml
 
     services:
         REST:
