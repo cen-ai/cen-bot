@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="2.0">
+  <category>
+      <pattern>SPEAK DELIVERY SUPPORT</pattern>
+      <template>Sure <set name = "topic">delivery-support</set></template>
+   </category>
+
+        <!--Bot is giving delivery support, owner asks question-->
+        <topic name="getting-delivery">
+          <category>
+            <pattern>* how long * deliver *</pattern>
+            <template>
+              <random>
+                 <li>Its tough to say this time of the year</li>
+                 <li>Sure, it will take same as estimated time</li>
+                 <li>This is high priority so in just couple of days</li>
+                 <li>Due to the unexpected ciscumstances its hard to say</li>
+                 <li>Its shows already delivered</li>
+                 <li>Its already delivered</li>
+                 <li>Its already left the item at your door step</li>
+                 <li>Its will get delivered tomorrow</li>
+                 <li>I dont know</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>* check the package * safely or not</pattern>
+            <template>
+              <random>
+                 <li>Yes its was signed my some one at your home</li>
+                 <li>It shows it was handed over to you</li>
+                 <li>No, Its still in on way</li>
+                 <li>Its not delivered yet, its out for delivery though</li>
+                 <li>The packing got slightly damaged</li>
+                 <li>It got delivered safely</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>* let me know package * safely or not</pattern>
+            <template>
+              <srai><star/> check the package <star index="2"/> safely or not</srai>
+            </template>
+          </category>
+          <category>
+            <pattern>* let me know package * </pattern>
+            <template>
+              <random>
+                 <li>Its delivered</li>
+                 <li>It shows it was handed over to you</li>
+                 <li>No, Its still in on way</li>
+                 <li>It got delivered safely</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>what is the * time to pick up the item</pattern>
+            <template>
+              <random>
+                 <li>Its early morning</li>
+                 <li>Its post lunch</li>
+                 <li>Its lunch time</li>
+                 <li>Its evening around 4</li>
+                 <li>Its before office hours</li>
+                 <li>In the morning session</li>
+                 <li>In the morning shift</li>
+                 <li>After noon</li>
+                 <li>After Sun set</li>
+                 <li>Before Sun set</li>
+                 <li>Not today</li>
+                 <li>All weekdays in office hours</li>
+                 <li>All year in office hours</li>
+                 <li>Only week ends in office hours</li>
+              </random>
+            </template>
+          </category>
+
+          <category>
+            <pattern>Confirm your tracking number</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm your user Id</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm your SSN</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm your phone number</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm your date of birth</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm your order number</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm the date of order</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm the item cost</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm the seller</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm the store</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Confirm the ticket number</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+
+          <category>
+            <pattern>Could you pack it carefully before returning the item</pattern>
+            <template>
+              <random>
+                 <li>Yes, sure</li>
+                 <li>No, I can't</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>May I know your payment method</pattern>
+            <template>
+              <random>
+                 <li>Cash</li>
+                 <li>Debit</li>
+                 <li>Credit</li>
+                 <li>Net banking</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>May I know the denominations</pattern>
+            <template>
+              <random>
+                 <li>Yes sure</li>
+                 <li>What do you mean</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>May I know which card</pattern>
+            <template>
+              <random>
+                 <li>Visa</li>
+                 <li>Master</li>
+                 <li>Amex</li>
+                 <li>Discover</li>
+                 <li>Paypal</li>
+                 <li>Does my Imax card work</li>
+              </random>
+            </template>
+          </category>
+
+          <category>
+            <pattern>Could you pay the amount at the time of delivery</pattern>
+            <template>
+              <random>
+                 <li>Sure</li>
+                 <li>No I dont have cash</li>
+                 <li>Any other options</li>
+              </random>
+            </template>
+          </category>
+
+          <category>
+            <pattern>Yes</pattern>
+            <that>Do you accept card</that>
+            <template>
+              <random>
+                 <li>Yes sure</li>
+                 <li>No</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>No</pattern>
+            <that>Do you accept card</that>
+            <template>
+              <random>
+                 <li>Yes sure</li>
+                 <li>No only cash</li>
+              </random>
+            </template>
+          </category>
+
+          <category>
+            <pattern>* prefferred time to deliver</pattern>
+            <template>
+              <random>
+                 <li>Its early morning</li>
+                 <li>Its post lunch</li>
+                 <li>Its lunch time</li>
+                 <li>Its evening around 4</li>
+                 <li>Its before office hours</li>
+                 <li>In the morning session</li>
+                 <li>In the morning shift</li>
+                 <li>After noon</li>
+                 <li>After Sun set</li>
+                 <li>Before Sun set</li>
+                 <li>Not today</li>
+                 <li>All weekdays in office hours</li>
+                 <li>All year in office hours</li>
+                 <li>Only week ends in office hours</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Could you make sure you are returning label</pattern>
+            <template>Yes sure</template>
+          </category>
+          <category>
+            <pattern>Can we know your availability as this item requires your signature</pattern>
+            <template>
+              <random>
+                 <li>Its early morning</li>
+                 <li>Its post lunch</li>
+                 <li>Its lunch time</li>
+                 <li>Its evening around 4</li>
+                 <li>Its before office hours</li>
+                 <li>In the morning session</li>
+                 <li>In the morning shift</li>
+                 <li>After noon</li>
+                 <li>After Sun set</li>
+                 <li>Before Sun set</li>
+                 <li>Not today</li>
+                 <li>All weekdays in office hours</li>
+                 <li>All year in office hours</li>
+                 <li>Only week ends in office hours</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>* where * near by *</pattern>
+            <template>
+              <random>
+                 <li>Sure, its near your home</li>
+                 <li>Sure, its near your office</li>
+                 <li>Sure, its in your way to office</li>
+                 <li>None near your</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Why are you so late</pattern>
+            <template>Due to unavoidable ciscumstances</template>
+          </category>
+          <category>
+            <pattern>Do you have any complaints on delivery</pattern>
+            <template>
+              <random>
+                 <li>Yes</li>
+                 <li>No</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Could you please look at new services available on website</pattern>
+            <template>
+              <random>
+                 <li>Sure</li>
+                 <li>I have no internet</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Please take a look at new services</pattern>
+            <template>
+              <random>
+                 <li>Sure</li>
+                 <li>I have no internet</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>Could you sign on this report</pattern>
+            <template>Definetely</template>
+          </category>
+          <category>
+            <pattern>* confirm * is safe</pattern>
+            <template>
+              <random>
+                 <li>Yes it is</li>
+                 <li>No its not</li>
+              </random>
+            </template>
+          </category>
+          <category>
+            <pattern>* you sign * invoice</pattern>
+            <template>
+              <random>
+                <li>Yes</li>
+                <li>Where to sign</li>
+                <li>Yes sure</li>
+                <li>Sure</li>
+                <li>No</li>
+             </random>
+           </template>
+          </category>
+          <category>
+            <pattern>Here *</pattern>
+            <that>Where to sign</that>
+            <template>
+              <random>
+                <li>Ok</li>
+                <li>Done</li>
+                <li>There it is</li>
+                <li>Got it</li>
+             </random>
+           </template>
+          </category>
+          <category>
+            <pattern>* offers *</pattern>
+            <template>
+              <random>
+                <li>Sure many offers</li>
+                <li>No Offers</li>
+                <li>Not at this time</li>
+             </random>
+           </template>
+          </category>
+          --------        <!--Bot is giving delivery support, owner asks question-->
+
+          <category>
+             <pattern>* satisfy * delivery</pattern>
+             <template>
+               <random>
+                  <li>Yes</li>
+                  <li>No</li>
+                  <li>No, because it arrived late</li>
+               </random>
+             </template>
+           </category>
+           <category>
+             <pattern>* questions *</pattern>
+             <template>
+               <random>
+                  <li>Yes</li>
+                  <li>Yes, Sure</li>
+                  <li>Can i return this item</li>
+                  <li>Can i replace this item</li>
+               </random>
+             </template>
+           </category>
+           <category>
+             <pattern>Yes</pattern>
+             <that>Can i return this item</that>
+             <template>
+              Ok Continue
+             </template>
+           </category>
+           <category>
+             <pattern>No</pattern>
+             <that>Can i return this item</that>
+             <template>
+              Ok Continue
+             </template>
+           </category>
+           <category>
+             <pattern>Yes</pattern>
+             <that>Can i replace this item</that>
+             <template>
+              Ok Continue
+             </template>
+           </category>
+           <category>
+             <pattern>No</pattern>
+             <that>Can i replace this item</that>
+             <template>
+              Ok Continue
+             </template>
+           </category>
+           <category>
+             <pattern>* refund the amount</pattern>
+             <template>
+               <random>
+                  <li>Yes</li>
+                  <li>Yes, Sure</li>
+                  <li>No, we can add it as coupon</li>
+                  <li>How to track refund status</li>
+                  <li>Refund to your bank in 7 business days</li>
+               </random>
+             </template>
+           </category>
+           <category>
+             <pattern>Online</pattern>
+             <that>How to track refund status</that>
+             <template>
+               Ok
+             </template>
+           </category>
+
+
+           <category>
+             <pattern>* pickup or delivery *</pattern>
+             <template>
+               <random>
+                  <li>Yes</li>
+                  <li>Yes, How Can I Help you</li>
+                  <li>No</li>
+               </random>
+             </template>
+           </category>
+           <category>
+             <pattern>Could you let me know how much would you charge for delivery</pattern>
+             <template>
+               <random>
+                  <li>Yes</li>
+                  <li>Yes, How Can I Help you</li>
+                  <li>No</li>
+               </random>
+             </template>
+           </category>
+
+
+           <category>
+             <pattern>how much would you cost for delivery service</pattern>
+             <template>
+               <random>
+                 <li>Its a percentage of total cost</li>
+                 <li>Its free</li>
+                 <li>Only tips</li>
+                 <li>No cost</li>
+                 <li>Its included</li>
+               </random>
+             </template>
+           </category>
+
+           <category>
+             <pattern>How * I know the status *</pattern>
+             <template>
+               <random>
+                 <li>You could check it online</li>
+                 <li>We will send you sms notifications</li>
+                 <li>You can track online</li>
+                 <li>We will send emails</li>
+                 <li>We will make a call once delivered</li>
+               </random>
+             </template>
+           </category>
+
+           <category>
+             <pattern>How to contact the delivery boy</pattern>
+             <template>
+               <random>
+                 <li>We will send the details once picked at local workshop</li>
+                 <li>you will get notifications</li>
+                 <li>Delivery boy will call you</li>
+                 <li>We mail in you some time the whole details</li>
+               </random>
+             </template>
+           </category>
+
+
+           <category>
+             <pattern>How can I pay for the service</pattern>
+             <template>
+               <random>
+                 <li>Pay online using Card</li>
+                 <li>Pay by cash</li>
+                 <li>Pay online via netbanking</li>
+                 <li>We accept both Debit and Credit</li>
+                 <li>We only accept Credit</li>
+                 <li>We have EMI Options</li>
+               </random>
+             </template>
+           </category>
+           <category>
+             <pattern>Do you have cash on delivery option</pattern>
+             <template>
+               <random>
+                 <li>Yes we do</li>
+                 <li>No we dont</li>
+               </random>
+             </template>
+           </category>
+           <category>
+             <pattern>Do you have EMI option</pattern>
+             <template>
+               <random>
+                 <li>Yes we do</li>
+                 <li>No we dont</li>
+               </random>
+             </template>
+           </category>
+
+           <category>
+             <pattern>Could you please change the current delivery address</pattern>
+             <template>Sure</template>
+           </category>
+           <category>
+             <pattern>Could you please change the current contact number</pattern>
+             <template>Sure</template>
+           </category>
+           <category>
+           <pattern>What are the language options </pattern>
+               <template>
+                 <random>
+                   <li>English</li>
+                   <li>We only have english</li>
+                 </random>
+               </template>
+           </category>
+
+           <category>
+           <pattern>Is * change * time *</pattern>
+           <template>
+             <random>
+               <li>Not really</li>
+               <li>Due to hurricane, yes</li>
+               <li>Not that I know of</li>
+               <li>Its on time</li>
+             </random>
+           </template>
+           </category>
+
+           <category>
+           <pattern>Is * change * date</pattern>
+             <template>
+               <random>
+                 <li>Not really</li>
+                 <li>Due to hurricane, yes</li>
+                 <li>Not that I know of</li>
+                 <li>Its on time</li>
+               </random>
+             </template>
+           </category>
+           <category>
+             <pattern>* available * return *</pattern>
+             <template>
+               <random>
+                 <li>Not really</li>
+                 <li>Due to hurricane, yes</li>
+                 <li>Not that I know of</li>
+                 <li>Its on time</li>
+               </random>
+             </template>
+           </category>
+           <category>
+           </pattern>Could you * to pick *</pattern>
+               <template>Ok Sure</template>
+           </category>
+
+           <category>
+         </pattern>* documents * today* delivery</pattern>
+             <template>Ok Sure</template>
+         </category>
+         <category>
+         </pattern>* hold * some time</pattern>
+             <template>Ok Sure</template>
+         </category>
+         <category>
+             <pattern>You can contact us at *</pattern>
+             <template>Ok Sure</template>
+         </category>
+         <category>
+             <pattern>What * do * missing *</pattern>
+             <template>Contact us as soon as possible</template>
+         </category>
+         <category>
+             <pattern>What * do * damage *</pattern>
+             <template>Contact us as soon as possible</template>
+         </category>
+
+
+
+
+
+
+
+
+
+        </topic>
+
+
+</aiml>

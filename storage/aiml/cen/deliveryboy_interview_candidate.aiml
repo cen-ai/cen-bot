@@ -1,0 +1,103 @@
+<aiml>
+<category>
+  <pattern>What is your experience as delivery boy</pattern>
+    <template>
+        <random>
+          <li>I am a fresher</li>
+          <li>I have quite a bit of experience</li>
+          <li>I have few years of experience</li>
+        </random>
+    </template>
+</category>
+<category>
+  <pattern>Do you have driving license</pattern>
+    <template>
+        <random>
+          <li>Yes</li>
+          <li>Yes, but it is expiring soon</li>
+          <li>Yes, I recently got it</li>
+          <li>I have international license permit</li>
+        </random>
+    </template>
+</category>
+<category><pattern>Do you have heavy vehicle permit</pattern>
+    <template>
+        <random>
+          <li>Yes</li>
+          <li>No</li>
+          <li>Yes, I recently got it</li>
+        </random>
+    </template>
+</category>
+<category><pattern>Do you have a clean license record</pattern>
+    <template>
+        <random>
+          <li>Yes</li>
+          <li>Yes, but recently I have involved in small incident </li>
+          <li>No, I met with an accident once</li>
+          <li>Yes, I think I have few speeding tickets</li>
+          <li>Yes, I think i got few parking tickets</li>
+          <li>No, I got speeing ticket many times</li>
+        </random>
+    </template>
+</category>
+<category><pattern>Do you have Car Insurance</pattern>
+    <template>
+        <random>
+          <li>Yes</li>
+          <li>No, I don't have</li>
+          <li>No, only for few months</li>
+        </random>
+    </template>
+</category>
+<category><pattern>Do you have a vehicle you can use to make deliveries</pattern>
+    <template>
+        <random>
+          <li>Yes</li>
+          <li>No, I don't have</li>
+          <li>Is it mandatory to have</li>
+          <li>Yes, but not in good condition</li>
+        </random>
+    </template>
+</category>
+<category><pattern>Yes</pattern>
+    <that>Is it mandatory to have</that>
+    <template>
+        <random>
+          <li>I can't afford it now</li>
+          <li>Ok</li>
+        </random>
+    </template>
+</category>
+<category><pattern>No</pattern>
+    <that>Is it mandatory to have</that>
+    <template>
+        Ok
+    </template>
+</category>
+<category><pattern>What is your qualification</pattern>
+    <template>
+        <random>
+          <li>I am a High School graduate</li>
+          <li>I did my schooling</li>
+          <li>I am doing my masters</li>
+          <li>I am Hight School graduate</li>
+        </random>
+    </template>
+</category>
+<category>
+  <pattern>Do you know communicate between dispatcher and schedulers</pattern>
+    <template>
+        <random>
+          <li>Yes</li>
+          <li>Yes, Its my current job responsibility too</li>
+          <li>No, But I am sure I can manage it</li>
+        </random>
+    </template>
+</category>
+
+
+
+
+
+</aiml>
