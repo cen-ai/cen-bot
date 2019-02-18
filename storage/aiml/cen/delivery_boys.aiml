@@ -12,10 +12,7 @@
        <pattern>NEGATIVE *</pattern>
        <template>No,<star/></template>
      </category>
-
-
-
-      <!--Bot is Delivery Boy, owner asks question-->
+    <!--Bot is Delivery Boy, owner asks question-->
      <topic name="delivery">
        <category>
          <pattern># are you afraid *</pattern>
@@ -30,11 +27,11 @@
        </category>
        <category>
          <pattern>are you in the correct *</pattern>
-         <template><srai>POSITIVE <star/></template>
+         <template><srai>POSITIVE <star/></srai></template>
        </category>
        <category>
          <pattern>I dont think you are in the correct *</pattern>
-         <template><srai>NEGATIVE <star/></template>
+         <template><srai>NEGATIVE <star/></srai></template>
        </category>
        <category>
          <pattern>Could you leave it at my door</pattern>
@@ -202,9 +199,7 @@
             Ok Please continue
         </template>
        </category>
-
-       <!---------------------------------------->
-
+       <!-- -->
        <category>
          <pattern>* satisfy * delivery</pattern>
          <template>
@@ -215,8 +210,7 @@
            </random>
          </template>
        </category>
-
-       <!-------Car Servicing       -->
+       <!-- Car Servicing -->
        <category>
          <pattern>timeofday</pattern>
          <template>
@@ -269,7 +263,6 @@
              <li>I got what was given to me</li>
              <li>Could you please contact support and get that resolved</li>
              <li>Please let me know which item is missing</li>
-
            </random>
          </template>
        </category>
@@ -294,7 +287,6 @@
          <that>Can I get that tomorrow</that>
          <template>OK will get it now.</template>
        </category>
-
        <category>
          <pattern>Did you make this pizza</pattern>
          <template>
@@ -313,24 +305,23 @@
            </random>
          </template>
        </category>
-
        <category>
-           </pattern>Looks like you moved forward</pattern>
+           <pattern>Looks like you moved forward</pattern>
            <template>ok coming back</template>
        </category>
-
        <category>
-       </pattern>Is * change * time *</pattern>
-       <template>
-         <random>
-           <li>Not really</li>
-           <li>Due to hurricane, yes</li>
-           <li>Not that I know of</li>
-           <li>Its on time</li>
-         </random>
-       </template>
+         <pattern>Is * change * time *</pattern>
+         <template>
+           <random>
+             <li>Not really</li>
+             <li>Due to hurricane, yes</li>
+             <li>Not that I know of</li>
+             <li>Its on time</li>
+           </random>
+         </template>
        </category>
-       <pattern>Is * change * date</pattern>
+       <category>
+         <pattern>Is * change * date</pattern>
          <template>
            <random>
              <li>Not really</li>
@@ -351,34 +342,24 @@
            </random>
          </template>
        </category>
-
        <category>
-           </pattern>Please keep the change</pattern>
+           <pattern>Please keep the change</pattern>
            <template>Thank you</template>
        </category>
-
        <category>
-
-
-
-
-       <category>
-           </pattern>Could you please handover the order to security</pattern>
-           <template>Ok Sure</template>
-       </category>
-
-       <category>
-       </pattern>Security Here, Could I tell your * details</pattern>
-           <template>Ok Sure</template>
-       </category>
-
-
-       <category>
-       </pattern>Could you drop my item at office</pattern>
+           <pattern>Could you please handover the order to security</pattern>
            <template>Ok Sure</template>
        </category>
        <category>
-       </pattern>Let me check whether it is fresh or not</pattern>
+          <pattern>Security Here, Could I tell your * details</pattern>
+            <template>Ok Sure</template>
+       </category>
+       <category>
+          <pattern>Could you drop my item at office</pattern>
+           <template>Ok Sure</template>
+       </category>
+       <category>
+          <pattern>Let me check whether it is fresh or not</pattern>
            <template>Ok Sure</template>
        </category>
        <category>
@@ -389,26 +370,5 @@
            <pattern>* gift card as part *</pattern>
            <template>Ok Sure</template>
        </category>
-
-
-
      </topic>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </aiml>

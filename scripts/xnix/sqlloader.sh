@@ -9,7 +9,7 @@ DBAUTH=root@localhost
 export PYTHONPATH=../../../programy/src
 
 # Categories
-python3 -m programy.storage.stores.sql.loader -c --entity categories --url mysql+pymysql://$DBAUTH/programy --dir ../../storage/aiml --subdir --extension=.aiml --verbose
+python3 -m programy.storage.stores.sql.loader -c --entity categories --url mysql+pymysql://$DBAUTH/programy --dir ../../storage/aiml/cen --subdir --extension=.aiml --verbose
 
 #
 # for i in ../../storage/dirs/*

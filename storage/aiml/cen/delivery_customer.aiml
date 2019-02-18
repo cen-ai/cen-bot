@@ -23,11 +23,11 @@
      </category>
      <category>
        <pattern>Is this the correct *</pattern>
-       <template><srai>POSITIVE <star/></template>
+       <template><srai>POSITIVE <star/></srai></template>
      </category>
      <category>
        <pattern>I dont think this the correct *</pattern>
-       <template><srai>NEGATIVE <star/></template>
+       <template><srai>NEGATIVE <star/></srai></template>
      </category>
      <category>
        <pattern>May I know your address</pattern>
@@ -357,7 +357,7 @@
        </template>
      </category>
 
-     <!------------------------------------>
+     <!-- -->
      <category>
        <pattern>* return * delivery</pattern>
        <template>
@@ -511,7 +511,7 @@
          Ok
        </template>
      </category>
-     <!------Car Delivery-->
+     <!--Car Delivery-->
 
 
      <category>
@@ -590,9 +590,7 @@
           OK I will be there at <star/>
        </template>
      </category>
-
-
-
+     <category>
        <pattern>* payment * to deliver the vehicle</pattern>
        <template>
          <random>
@@ -739,14 +737,13 @@
        <template>Sure</template>
      </category>
      <category>
-         </pattern>* inform * damage</pattern>
+         <pattern>* inform * damage</pattern>
          <template>Sure</template>
      </category>
      <category>
-     </pattern>* Change * time *</pattern>
+        <pattern>* Change * time *</pattern>
          <template>Yes please</template>
      </category>
-
      <category>
      <pattern>Could you give us feedback online</pattern>
        <template>
@@ -790,7 +787,7 @@
      </category>
 
      <category>
-     </pattern>Could you please keep the amount ready</pattern>
+       <pattern>Could you please keep the amount ready</pattern>
        <template>
          <random>
             <li>Sure</li>
@@ -829,7 +826,7 @@
 
 
      <category>
-     <pattern>Did you * ordered</pattern>
+       <pattern>Did you * ordered</pattern>
          <template>Yes</template>
      </category>
      <category>
@@ -838,80 +835,61 @@
      </category>
 
      <category>
-         </pattern>Is it an apartment or house</pattern>
+         <pattern>Is it an apartment or house</pattern>
          <template>Its an apartment</template>
      </category>
 
      <category>
-     </pattern>Could you sign on this *</pattern>
+        <pattern>Could you sign on this *</pattern>
          <template>Sure</template>
      </category>
      <category>
-     </pattern>Could you sign *</pattern>
+          <pattern>Could you sign *</pattern>
          <template>Sure</template>
      </category>
      <category>
-         </pattern>Here is the bill</pattern>
+         <pattern>Here is the bill</pattern>
          <template>Ok Sure</template>
      </category>
-
-            <category>
-                </pattern>May I come in to drop the package</pattern>
-                <template>Yes</template>
-            </category>
-
-            <category>
-             <pattern>Shall I wait in waiting hall</pattern>
-                <template>Ok Sure</template>
-            </category>
-
-            <category>
-                </pattern>Grocery Delivery is here</pattern>
-                <template>Ok</template>
-            </category>
-            <category>
-            </pattern>* hold * some time</pattern>
-                <template>Ok Sure</template>
-            </category>
-            <category>
-                </pattern>Let me find change</pattern>
-                <template>Ok Sure</template>
-            </category>
-
-            <category>
-                <pattern>You can contact me at *</pattern>
-                <template>Ok Sure</template>
-            </category>
-            <category>
-                </pattern>Here is our catelogue</pattern>
-                <template>Ok Sure</template>
-            </category>
-            <category>
-            </pattern>* any parking restrictions * your *</pattern>
-                <template>Ok Sure</template>
-            </category>
-            <category>
-                <pattern>This can take more time since it is large delivery
-                </pattern>
-                <template>Ok Sure</template>
-            </category>
-
-            <category>
-                <pattern>Are there any height restriction at home
-                </pattern>
-                <template>No</template>
-            </category>
-
-
-
-
-
-
-
-
-
-
-
+      <category>
+          <pattern>May I come in to drop the package</pattern>
+          <template>Yes</template>
+      </category>
+      <category>
+          <pattern>Shall I wait in waiting hall</pattern>
+          <template>Ok Sure</template>
+      </category>
+      <category>
+          <pattern>Grocery Delivery is here</pattern>
+          <template>Ok</template>
+      </category>
+      <category>
+          <pattern>* hold * some time</pattern>
+          <template>Ok Sure</template>
+      </category>
+      <category>
+          <pattern>Let me find change</pattern>
+          <template>Ok Sure</template>
+      </category>
+      <category>
+          <pattern>You can contact me at *</pattern>
+          <template>Ok Sure</template>
+      </category>
+      <category>
+          <pattern>Here is our catelogue</pattern>
+          <template>Ok Sure</template>
+      </category>
+      <category>
+          <pattern>* any parking restrictions * your *</pattern>
+          <template>Ok Sure</template>
+      </category>
+      <category>
+          <pattern>This can take more time since it is large delivery</pattern>
+          <template>Ok Sure</template>
+      </category>
+      <category>
+          <pattern>Are there any height restriction at home</pattern>
+          <template>No</template>
+      </category>
    </topic>
-
 </aiml>

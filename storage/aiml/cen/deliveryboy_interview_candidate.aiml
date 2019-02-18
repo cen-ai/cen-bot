@@ -1,103 +1,411 @@
-<aiml>
-<category>
-  <pattern>What is your experience as delivery boy</pattern>
-    <template>
-        <random>
-          <li>I am a fresher</li>
-          <li>I have quite a bit of experience</li>
-          <li>I have few years of experience</li>
-        </random>
-    </template>
-</category>
-<category>
-  <pattern>Do you have driving license</pattern>
-    <template>
-        <random>
-          <li>Yes</li>
-          <li>Yes, but it is expiring soon</li>
-          <li>Yes, I recently got it</li>
-          <li>I have international license permit</li>
-        </random>
-    </template>
-</category>
-<category><pattern>Do you have heavy vehicle permit</pattern>
-    <template>
-        <random>
-          <li>Yes</li>
-          <li>No</li>
-          <li>Yes, I recently got it</li>
-        </random>
-    </template>
-</category>
-<category><pattern>Do you have a clean license record</pattern>
-    <template>
-        <random>
-          <li>Yes</li>
-          <li>Yes, but recently I have involved in small incident </li>
-          <li>No, I met with an accident once</li>
-          <li>Yes, I think I have few speeding tickets</li>
-          <li>Yes, I think i got few parking tickets</li>
-          <li>No, I got speeing ticket many times</li>
-        </random>
-    </template>
-</category>
-<category><pattern>Do you have Car Insurance</pattern>
-    <template>
-        <random>
-          <li>Yes</li>
-          <li>No, I don't have</li>
-          <li>No, only for few months</li>
-        </random>
-    </template>
-</category>
-<category><pattern>Do you have a vehicle you can use to make deliveries</pattern>
-    <template>
-        <random>
-          <li>Yes</li>
-          <li>No, I don't have</li>
-          <li>Is it mandatory to have</li>
-          <li>Yes, but not in good condition</li>
-        </random>
-    </template>
-</category>
-<category><pattern>Yes</pattern>
-    <that>Is it mandatory to have</that>
-    <template>
-        <random>
-          <li>I can't afford it now</li>
-          <li>Ok</li>
-        </random>
-    </template>
-</category>
-<category><pattern>No</pattern>
-    <that>Is it mandatory to have</that>
-    <template>
-        Ok
-    </template>
-</category>
-<category><pattern>What is your qualification</pattern>
-    <template>
-        <random>
-          <li>I am a High School graduate</li>
-          <li>I did my schooling</li>
-          <li>I am doing my masters</li>
-          <li>I am Hight School graduate</li>
-        </random>
-    </template>
-</category>
-<category>
-  <pattern>Do you know communicate between dispatcher and schedulers</pattern>
-    <template>
-        <random>
-          <li>Yes</li>
-          <li>Yes, Its my current job responsibility too</li>
-          <li>No, But I am sure I can manage it</li>
-        </random>
-    </template>
-</category>
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="2.0">
+  <category>
+      <pattern>IMPERSONATE DELIVERY BOY CANDIDATE</pattern>
+      <template>Sure <set name = "topic">delivery-interview</set></template>
+   </category>
 
+   <!--Bot is getting the item from a delivery boy, delivery boy asks question-->
+<topic name="delivery-interview">
+  <category>
+    <pattern>What is your experience as delivery boy</pattern>
+      <template>
+          <random>
+            <li>I am a fresher</li>
+            <li>I have quite a bit of experience</li>
+            <li>I have few years of experience</li>
+          </random>
+      </template>
+  </category>
+  <category>
+    <pattern>Do you have driving license</pattern>
+      <template>
+          <random>
+            <li>Yes, I have it</li>
+            <li>Yes, it is expiring soon</li>
+            <li>Yes, I recently got it</li>
+            <li>No</li>
+          </random>
+      </template>
+  </category>
+  <category><pattern>Do you have heavy vehicle permit</pattern>
+      <template>
+          <random>
+            <li>Yes</li>
+            <li>No</li>
+            <li>Yes, I recently got it</li>
+          </random>
+      </template>
+  </category>
+  <category><pattern>Do you have a clean license record</pattern>
+      <template>
+          <random>
+            <li>Yes</li>
+            <li>Yes, but recently I have involved in small incident </li>
+            <li>No, I met with an accident once</li>
+            <li>Yes, I think I have few speeding tickets</li>
+            <li>Yes, I think i got few parking tickets</li>
+            <li>No, I got speeing ticket many times</li>
+          </random>
+      </template>
+  </category>
+  <category><pattern>Do you have Car Insurance</pattern>
+      <template>
+          <random>
+            <li>Yes</li>
+            <li>No, I don't have</li>
+            <li>No, only for few months</li>
+          </random>
+      </template>
+  </category>
+  <category><pattern>Do you have a vehicle you can use to make deliveries</pattern>
+      <template>
+          <random>
+            <li>Yes</li>
+            <li>No, I don't have</li>
+            <li>Is it mandatory to have</li>
+            <li>Yes, but not in good condition</li>
+          </random>
+      </template>
+  </category>
+  <category><pattern>Yes</pattern>
+      <that>Is it mandatory to have</that>
+      <template>
+          <random>
+            <li>I can't afford it now</li>
+            <li>Ok</li>
+          </random>
+      </template>
+  </category>
+  <category><pattern>No</pattern>
+      <that>Is it mandatory to have</that>
+      <template>
+          Ok
+      </template>
+  </category>
+  <category><pattern>What is your qualification</pattern>
+      <template>
+          <random>
+            <li>I am a High School graduate</li>
+            <li>I did my schooling</li>
+            <li>I am doing my masters</li>
+            <li>I am Hight School graduate</li>
+          </random>
+      </template>
+  </category>
+  <category>
+    <pattern>Do you know how to communicate between dispatcher and scheduler</pattern>
+      <template>
+          <random>
+            <li>Yes</li>
+            <li>Yes, Its my current job responsibility too</li>
+            <li>No, But I am sure I can manage it</li>
+          </random>
+      </template>
+  </category>
+  <category>
+    <pattern>Have you ever been in a car accident</pattern>
+    <template>
+      <random>
+        <li>Yes</li>
+        <li>No</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>How comfortable are you *</pattern>
+      <template>Very much comfortable</template>
+  </category>
+  <category>
+    <pattern>This position will require you to work * Will *</pattern>
+      <template>
+        <random>
+          <li>Yes Sure</li>
+          <li>No, Thats not possible</li>
+        </random>
+      </template>
+  </category>
+  <category>
+    <pattern>Would you consider yourself physically fit</pattern>
+    <template>Yes for sure</template>
+  </category>
+  <category>
+    <pattern> Will you * to lift *</pattern>
+    <template>Yes ofcourse</template>
+  </category>
+  <category>
+    <pattern>Do * use GPS</pattern>
+    <template>Yes ofcourse</template>
+  </category>
+  <category>
+    <pattern>How * deal * heavy *</pattern>
+      <template>
+        It all depends on the day, but usually casual
+      </template>
+  </category>
+  <category>
+    <pattern>Do * how * report</pattern>
+    <template>
+      <random>
+        <li>I have experience with it</li>
+        <li>Very well </li>
+    </random>
+    </template>
+  </category>
 
+  <category><pattern>* where * return *</pattern>
+      <template>
+        <random>
+          <li>Its at office</li>
+          <li>Keep it in van itself</li>
+      </random>
+      </template>
+  </category>
+  <category>
+    <pattern>Can you drive heavy *</pattern>
+    <template>
+      <random>
+        <li>Never done it before</li>
+        <li>I am not sure</li>
+        <li>Yes I can</li>
+        <li>May be not</li>
+    </random>
+    </template>
+  </category>
+  <category>
+    <pattern>How do you arrange *</pattern>
+      <template>Based on routes</template>
+  </category>
+  <category>
+    <pattern>How do you ensure * delivery</pattern>
+      <template>Will take signature from customer</template>
+  </category>
+  <category>
+    <pattern>Can * maintain * neat *</pattern>
+    <template>Ofcourse</template>
+  </category>
+  <category>
+    <pattern>Where would you place * fragile *</pattern>
+    <template>On Top with suspension</template>
+  </category>
+  <category>
+    <pattern>Rules and regulations are mandatory</pattern>
+    <template>OK Got it</template>
+  </category>
+  <category>
+    <pattern>Do you know how * forklift</pattern>
+    <template>I do know it</template>
+  </category>
+  <category>
+    <pattern>* handle deliveries *</pattern>
+    <template>
+      <random>
+        <li>Yes I have a great record</li>
+        <li>I have a record of never miss</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* drop at right location</pattern>
+    <template>
+      <random>
+        <li>Yes I know the area</li>
+        <li>I am new to this area, but will be able to learn soon</li>
+        <li>No I do not,  will be able to learn soon</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* experience * driver</pattern>
+    <template>
+      <random>
+        <li>Yes I know the area</li>
+        <li>I have no points on my license</li>
+        <li>I drove all kinds of vehicles</li>
+        <li>I have experience with al kinds of vehicles</li>
+      </random>
+    </template>
+  </category>
 
-
-
+  <category>
+    <pattern>* long haul *</pattern>
+    <template>
+      <random>
+        <li>Yes do have that experience</li>
+        <li>Yes I do </li>
+        <li>No I dont</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>what * tasks * do</pattern>
+    <template>
+      <random>
+        <li>I can lift items</li>
+        <li>I can drive</li>
+        <li>I can door deliver</li>
+        <li>I can ride bicycle</li>
+        <li>I can manage team</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>how good * your driving *</pattern>
+    <template>
+      <random>
+        <li>I would say pretty good</li>
+        <li>I can drive in peak hours</li>
+        <li>I have record of ontime delivery</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>How do you prioritise the orders</pattern>
+    <template>
+      <random>
+        <li>Based on routes</li>
+        <li>Based on timings</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>Which language* do you speak</pattern>
+    <template>
+      <random>
+        <li>Many</li>
+        <li>English and Spanish</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>What do you do before loading the truck</pattern>
+    <template>Inspect the items</template>
+  </category>
+  <category>
+    <pattern>* traffic violations</pattern>
+    <template>
+      <random>
+        <li>Just got two parking tickets</li>
+        <li>Only one speeding ticket</li>
+        <li>I have a clean record</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>What are your perks</pattern>
+    <template>
+      <random>
+        <li>Good attitude</li>
+        <li>Friendly</li>
+        <li>Patient</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>Could you come for a driving test</pattern>
+    <template>Sure</template>
+  </category>
+  <category>
+    <pattern>* know paperwork *</pattern>
+    <template>
+      <random>
+        <li>Ofcourse I do</li>
+        <li>Yes I do</li>
+        <li>This is my first job</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* hear *</pattern>
+    <template>Yes</template>
+  </category>
+  <category>
+    <pattern>* eye sight *</pattern>
+    <template>Its healthy</template>
+  </category>
+  <category>
+    <pattern>* pressure</pattern>
+    <template>
+      <random>
+        <li>Ofcourse I do</li>
+        <li>Yes I do</li>
+        <li>This is my first job</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* back issues</pattern>
+    <template>
+      <random>
+        <li>I am physically fit</li>
+        <li>I can only sit for 30min</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* critical *</pattern>
+    <template>This is my first job</template>
+  </category>
+  <category>
+    <pattern>* fragile packages</pattern>
+    <template>
+      <random>
+        <li>I can handle them,unless its a school</li>
+        <li>I can take care of them</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* hazardous packages</pattern>
+    <template>
+      <random>
+        <li>I do not have experience in that area</li>
+        <li>I can always learn</li>
+        <li>I expect training in that regard</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>* handling confidential *</pattern>
+    <template>
+      <random>
+        <li>I do not care what is in the package</li>
+        <li>Every package is confidential for me</li>
+        <li>I never heard of such thing</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern> When * call management *</pattern>
+    <template>
+      <random>
+        <li>In case of emergency</li>
+        <li>Never</li>
+        <li>I case of any critical issue</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>Can you lift 50 pounds</pattern>
+    <template>
+      <random>
+        <li>Can do</li>
+        <li>No I cannot</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>work * time</pattern>
+    <template>
+      <random>
+        <li>Full time</li>
+        <li>Part time</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>Can I see your ID</pattern>
+    <template>Ok Sure</template>
+  </category>
+</topic>
 </aiml>
