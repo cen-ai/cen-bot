@@ -6,7 +6,7 @@ cd $(dirname $0)
 
 DBAUTH=root@localhost
 
-export PYTHONPATH=../../program-y/src
+export PYTHONPATH=../../programy/src
 
 # Categories
 python3 -m programy.storage.stores.sql.loader -c --entity categories --url mysql+pymysql://$DBAUTH/programy --dir ../../storage/aiml --subdir --extension=.aiml --verbose

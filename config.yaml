@@ -208,7 +208,7 @@ brain:
 
     # Braintree
     braintree:
-      create: False
+      create: True
 
     services:
         REST:

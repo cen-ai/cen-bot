@@ -3,7 +3,7 @@
 cd $(dirname $0)
 
 #clear
-export PYTHONPATH=../../program-y/src:
+export PYTHONPATH=../../programy/src:
 if [[ -z "${PYTHONPATH}" ]]; then
   echo "PYTHONPATH is undefined"
   exit

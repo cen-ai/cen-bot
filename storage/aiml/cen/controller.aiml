@@ -23,4 +23,12 @@
   </template>
 </category>
 
+<category>
+  <pattern>braindump</pattern>
+  <template>
+    <extension path="programy.extensions.admin.client.ClientAdminExtension">
+        DUMP BRAIN bot brain
+    </extension>
+  </template>
+</category>
 </aiml>

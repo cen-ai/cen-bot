@@ -6,6 +6,22 @@
 <!-- Last modified 3/3/2018 -->
 <!-- How do I use cen? -->
 
+<category>
+  <pattern>CEN UPDATE</pattern>
+  <template>
+    <extension path="programy.extensions.admin.cen.CenAdminExtension">
+        UPDATE AIML
+    </extension>
+  </template>
+</category>
+<category>
+  <pattern>CEN DELETE</pattern>
+  <template>
+    <extension path="programy.extensions.admin.cen.CenAdminExtension">
+        DELETE AIML
+    </extension>
+  </template>
+</category>
 <category><pattern># WEATHER IN * NOW</pattern>
 <template><sraix service="weather"><star index="2"/></sraix></template>
 </category>
@@ -211,7 +227,7 @@
             </srai>
         </template>
     </category>
-    
+
 
 
 

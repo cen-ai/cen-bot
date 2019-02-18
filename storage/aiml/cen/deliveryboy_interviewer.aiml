@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<aiml version="2.0">
+  <category>
+      <pattern>IMPERSONATE DELIVERY BOY INTERVIEWER</pattern>
+      <template>Sure <set name = "topic">delivery-interviewer</set></template>
+   </category>
+
+   <!--Bot is getting the item from a delivery boy, delivery boy asks question-->
+<topic name="delivery-interviewer">
+  <category><pattern>Do I need to wash the truck</pattern>
+      <template>
+        <random>
+          <li>Yes you do</li>
+          <li>No cleaning department will take care of it</li>
+        </random>
+      </template>
+  </category>
+  <category>
+    <pattern>Do I need to fill the fuel in the truck</pattern>
+      <template>
+        <random>
+          <li>Yes you do</li>
+          <li>No another department will take care of it</li>
+        </random>
+      </template>
+  </category>
+  <category>
+    <pattern>Do I need to take care of maintanace of the truck</pattern>
+    <template>
+      <random>
+        <li>Yes you do</li>
+        <li>No another department will take care of it</li>
+      </random>
+    </template>
+  </category>
+  <category>
+    <pattern>Do i need to wear uniform</pattern>
+      <template>Yes</template>
+  </category>
+  <category>
+    <pattern>* missing *</pattern>
+      <template>Contact us as soon as possible</template>
+  </category>
+  <category>
+    <pattern>* damaged *</pattern>
+      <template>Contact us as soon as possible</template>
+  </category>
+  <category>
+    <pattern>Is delivery boy also driver</pattern>
+    <template>Yes</template>
+  </category>
+</topic>
+
+</aiml>
